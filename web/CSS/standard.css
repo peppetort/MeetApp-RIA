@@ -1,0 +1,320 @@
+/*GENERAL*/
+body {
+    min-height: 100%;
+    margin: 0px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+hr {
+    width: 100%;
+    height: 0;
+}
+
+/*ERRORS*/
+
+.error {
+    visibility: hidden;
+}
+
+p.error {
+    color: red;
+    font-size: 13px !important;
+}
+
+/*MODAL*/
+.overlay{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog {
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 1em black;
+    width: 40%;
+    height: 60%;
+    min-width: 400px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+dialog > .dialog-header{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ba000d;
+}
+
+dialog > .dialog-main{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+dialog > .dialog-main > form{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+dialog > .dialog-main > form > div{
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog > .dialog-main > form > div > h3{
+    margin: 5px;
+}
+
+dialog > .dialog-footer{
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog > .dialog-footer > button{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/*BUTTONS*/
+input[type="submit"], button {
+    padding: 7px 25px;
+    width: 207px;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 3%;
+    border: 1px solid #ba000d;
+    color: whitesmoke;
+    font-size: 15px;
+    background-image: linear-gradient(25deg, #f44336, #ba000d);
+}
+
+input[type="submit"]:hover, button:hover {
+    color: antiquewhite;
+    background-image: linear-gradient(25deg, #ba000d, #f44336);
+}
+
+input[type="submit"]:active, button:active {
+    box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:focus, button:focus {
+    outline: none;
+    border: 2px solid #ba000d;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+/*INPUTS*/
+
+input[type="password"], input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], select:focus {
+    width: 200px;
+    height: 25px;
+    border: 1px solid #5c5c5c;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    border: 1px solid #5c5c5c;
+    border-radius: 0px;
+    margin-left: 20px;
+}
+
+input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="time"]:focus, input[type="number"]:focus, select:focus {
+    outline: none !important;
+    border: 1px solid #f44336;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+/*NAVBAR*/
+.grid-container > .grid-header > nav {
+    width: 100%;
+    height: 60px;
+    background-color: #f44336;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.grid-container > .grid-header > nav .navProfile {
+    padding: 0px 10px;
+    min-width: 100px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container > .grid-header > nav .navProfile > img {
+    align-self: center;
+    height: 40px;
+    width: 40px;
+}
+
+.grid-container > .grid-header > nav .navProfile > p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.grid-container > .grid-header > nav .navRight {
+    padding: 0px 10px;
+    height: 100%;
+    min-width: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container > .grid-header > nav .navRight img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.grid-container > .grid-header > h1 {
+    margin-left: 20px;
+}
+
+
+/*FOOTER*/
+.grid-container > .grid-footer > footer {
+    font-size: 15px;
+}
+
+/*SECTION*/
+.grid-container > .grid-main > section > .index p {
+    font-size: 20px;
+    margin: 10px !important;
+}
+
+.grid-container > .grid-main > section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #bababa;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 300px;
+    height: 90%;
+    min-width: 250px;
+    min-height: 400px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-container > .grid-main > section > .section-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 10%;
+}
+
+.grid-container > .grid-main > section > .section-header h2{
+    margin-bottom: 0px;
+}
+
+.grid-container > .grid-main > section > .section-header p{
+    margin: 0px;
+}
+
+.grid-container > .grid-main > section > .section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.grid-container > .grid-main > section > .section-container h3{
+    margin: 5px;
+}
+
+.grid-container > .grid-main > section > .section-container p{
+    margin: 2px;
+}
+
+.grid-container > .grid-main > section > .section-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
+/*GRIDS*/
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 'header header header header header header' 'main main main main main main' 'footer footer footer footer footer footer';
+    grid-template-rows: 130px auto 50px;
+}
+
+.grid-container > .grid-header {
+    grid-area: header;
+    background-color: #ba000d;
+}
+
+.grid-container > .grid-main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.grid-container > .grid-footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}

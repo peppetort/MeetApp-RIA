@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="CSS/standard.css"/>
+    <script src="JAVASCRIPT/utils.js" charset="utf-8" defer></script>
+    <script src="JAVASCRIPT/loginManagement.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+
+<div class="grid-container">
+
+    <div class="grid-header">
+        <h1>
+            Welcome to Meeting App
+        </h1>
+
+        <nav></nav>
+    </div>
+
+    <div class="grid-main">
+
+        <section>
+            <div class="section-container index">
+                <p id="login-reg-message" class="error">Error message</p>
+
+                <p>Login</p>
+                <form id="login-form">
+                    <input type="text" name="username" placeholder="Username" required/><br/>
+                    <input type="password" name="password" placeholder="Password" required/><br/>
+                    <input type="submit" name="submit_login" value="Login"/>
+                </form>
+
+
+                <p>Registration</p>
+                <form id="registration-form">
+                    <input type="text" name="name" placeholder="Name" required><br/>
+                    <input type="text" name="surname" placeholder="Surname" required><br/>
+                    <input type="text" name="username" placeholder="Username" required><br/>
+                    <input type="email" name="email" placeholder="Email" required><br/>
+                    <input type="password" name="password1" placeholder="Password" required><br/>
+                    <input type="password" name="password2" placeholder="Repeat Password" required><br/>
+                    <input type="submit" name="submit_registration" value="Sing up">
+                </form>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div class="grid-footer">
+        <footer>
+            (c) Web Technologies 2019-2020 Tortorelli
+        </footer>
+    </div>
+
+</div>
+</body>
+
+</html>
